@@ -1,0 +1,128 @@
+$colorful:#EC6C21;
+$size:16px;
+$transition: all 0.5s;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 140px;
+    position: relative;
+    margin-top: 30px;
+
+    .nav--list .nav--item {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 115px;
+        top: 17px;
+        
+    }
+    .bascet{
+        position: absolute;
+        margin-left: 1260px;
+    }
+
+    .nav--item a {
+        text-decoration: none;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        text-align: left;
+        color: #002959;
+        padding-right: 40px;
+        transition: $transition;
+    }
+}
+
+.btn--img .btn {
+    padding: 18px 30px;
+    border: none;
+    background-color:$colorful;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+// hero
+.hero__container {
+    text-align: center;
+    margin-bottom: 150px;
+    position: relative;
+
+    .hero__title h1 {
+        font-family: 'Inter';
+        font-size: 61px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: center;
+        color: #002959;
+        margin-bottom: 40px;
+
+    }
+
+    .hero__title p {
+        font-family: 'Inter';
+        font-size: 19.3px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+        color: #002959;
+        margin-bottom: 50px;
+        
+    }
+    .hero__title .btn--download {
+        padding: 18px 30px;
+        background-color: $colorful;
+        color: white;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 600px;
+        gap: 6px;
+    }
+}
+.hero__title .doodle{
+  position: absolute; 
+  top: -2px;
+  right: 155px; 
+}
+.hero__title .circle{
+    position: absolute;
+    top: 95px;
+    left: 180px;
+}
+// MAIN
+.main__container{
+    text-align: center;
+    background-image: url(../images/Layer.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+// ANIMATION//
+.nav--list a:hover{
+   color: $colorful;
+}
+
